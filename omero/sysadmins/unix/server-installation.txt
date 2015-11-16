@@ -3,30 +3,7 @@ OMERO.server installation
 
 This section covers the installation of OMERO.server on UNIX and
 UNIX-like platforms. This includes all BSD, Linux and Mac OS X
-systems. Depending upon which platform you are using, you may find a
-more specific walk-through listed below.
-
-.. seealso::
-
-    :doc:`server-centos6`
-        Instructions for installing Python and Ice on CentOS 6.
-
-    :doc:`server-linux-walkthrough`
-        Instructions for installing OMERO.server from scratch on
-        Ubuntu 14.04 and CentOS 6.
-
-    :doc:`server-install-homebrew`
-        Instructions for installing and building OMERO.server on Mac
-        OS X with Homebrew using our special formulas (i.e. from the
-        source code via Homebrew). **You do not need to refer to this
-        page to install the prerequisites with Homebrew and then
-        install the server zip from the downloads page.**
-
-    Monash University also have a guide for `installing OMERO on
-    CentOS 6.3 (64-bit)
-    <https://confluence-vre.its.monash.edu.au/display/CVL/Installing+Omero+on+CentOS+6.3+(64-bit)>`_
-    which you may find useful.
-
+systems.
 
 Prerequisites
 -------------
@@ -55,22 +32,16 @@ refers to Debian and derivative distributions such as Ubuntu.
 "RedHat" refers to RedHat and related distributions such as CentOS,
 Fedora and Scientific Linux.
 
-* For Ubuntu you need to enable the **universe** repository. This
-  should be enabled by default. If not enabled, it may be enabled by
-  editing :file:`/etc/apt/sources.list` directly, in which case the
-  entries may already exist but are commented out, or by using
-  Synaptic (10.04 and 10.10) or Ubuntu Software Center (11.04
-  onwards). Update your package lists to ensure that you get the
-  latest packages::
+Depending upon which platform you are using, you may find a
+more specific walk-through listed below.
 
-    $ sudo apt-get update
+.. toctree::
+    :maxdepth: 1
+    :titlesonly:
 
-  Install packages by running::
-
-    $ sudo apt-get install package
-
-  where *package* is the package name to install.
-
+    server-centos6
+    server-linux-walkthrough
+    server-install-homebrew
 
 .. _server-requirements:
 
