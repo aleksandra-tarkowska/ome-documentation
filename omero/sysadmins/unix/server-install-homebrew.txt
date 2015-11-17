@@ -100,7 +100,7 @@ Check that Python is working and is version 2.7::
     $ /usr/local/bin/python --version
     Python 2.7.9
 
-To create isolated Python environemnt you can set up and use `virtual
+To create an isolated Python environment you can set up and use `virtual
 environments <http://www.virtualenv.org/en/latest/>`_ to install the OMERO
 Python dependencies (see :ref:`python_dependencies`).
 
