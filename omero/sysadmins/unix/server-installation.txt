@@ -481,8 +481,8 @@ The following environment variables may be configured:
   PostgreSQL, the :file:`bin` directory for each must be added to the
   path. The OMERO :file:`bin` directory may also be added to the
   search path (:file:`${OMERO_PREFIX}/bin` if :envvar:`OMERO_PREFIX`
-  has been set). If using a virtual environment, the path to the
-  virtualenv must be added.
+  has been set). If using a virtual environment, the absolute path to
+  the :file:`bin` directory of the virtualenv must be added.
 :envvar:`PYTHONPATH`
   The Ice :file:`python` directory must be made available to python.
   If using the Ice packages provided by your distribution, this will
