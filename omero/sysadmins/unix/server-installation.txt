@@ -8,12 +8,12 @@ more specific walk-through listed below.
 
 .. seealso::
 
-    :doc:`server-centos6`
-        Instructions for installing Python and Ice on CentOS 6.
+    :doc:`server-centos6-ius`
+        Instructions for installing Python2.7 and Ice 3.5 on CentOS 6.
 
     :doc:`server-linux-walkthrough`
         Instructions for installing OMERO.server from scratch on
-        Ubuntu 14.04 and CentOS 6.
+        Ubuntu 14.04 and CentOS 7.
 
     :doc:`server-install-homebrew`
         Instructions for installing and building OMERO.server on Mac
@@ -136,12 +136,12 @@ If possible, install one of the following packages:
 +-----------+---------------------------+
 | Homebrew  | N/A (install Oracle Java) |
 +-----------+---------------------------+
-| RedHat    | java-1.7.0-openjdk        |
+| RedHat    | java-1.8.0-openjdk        |
 +-----------+---------------------------+
 
 OMERO works with the OpenJDK JRE provided by most systems, or with
 Oracle Java. Version 7 or later is
-recommended. **OpenJDK version 8 is not currently supported**.
+recommended.
 
 Your system may already provide a suitable JRE, in which case no extra steps
 are necessary. Linux distributions usually provide OpenJDK, and older MacOS X
@@ -191,7 +191,7 @@ The following Python packages are required:
       - Functionality
       - Downloads
 
-    * - `Django`_ (1.8 or higher) [1]_
+    * - `Django`_ (1.8) [1]_
       - OMERO.web
       - :pypi:`Django` page
 
@@ -252,8 +252,8 @@ If possible, install the following packages:
       - python
 
 .. note::
-    CentOS 6 users should read :doc:`server-centos6` and follow the
-    instructions there to install Python and the required modules.
+    CentOS 6 users should read :doc:`server-centos6-ius` and follow the
+    instructions there to install Python2.7 and the required modules.
 
 Ice
 ^^^
@@ -293,8 +293,8 @@ latest release is available from the :zeroc:`ZeroC website
 <download.html>`.
 
 .. note::
-    CentOS 6 users should read :doc:`server-centos6` and follow the
-    instructions there to install Ice.
+    CentOS 6 users should read :doc:`server-centos6-ius` and follow the
+    instructions there to install Ice 3.5.
 
 .. note::
     ZeroC_ Ice can always be built from source code for specific
@@ -481,7 +481,8 @@ The following environment variables may be configured:
   PostgreSQL, the :file:`bin` directory for each must be added to the
   path. The OMERO :file:`bin` directory may also be added to the
   search path (:file:`${OMERO_PREFIX}/bin` if :envvar:`OMERO_PREFIX`
-  has been set).
+  has been set). If using a virtual environment, the path to the
+  virtualenv must be added.
 :envvar:`PYTHONPATH`
   The Ice :file:`python` directory must be made available to python.
   If using the Ice packages provided by your distribution, this will
@@ -500,7 +501,7 @@ After making any needed changes, either source the corresponding file
 or log back in for them to take effect. Run ``env`` to check them.
 
 .. note::
-    CentOS 6 users should read :doc:`server-centos6` and set the
+    CentOS 6 users should read :doc:`server-centos6-ius` and set the
     needed environment variables as documented.
 
 Creating a database
