@@ -99,6 +99,8 @@ start OMERO and OMERO.web automatically:
   <walkthrough/step06_ubuntu1404_daemon.sh>`
 | :download:`step06_centos7_daemon.sh
   <walkthrough/step06_centos7_daemon.sh>`
+| :download:`step06_centos6_daemon.sh
+  <walkthrough/step06_centos6_daemon.sh>`
 | :download:`omero-init.d <walkthrough/omero-init.d>`
 | :download:`omero-web-init.d <walkthrough/omero-web-init.d>`
 
